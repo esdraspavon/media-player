@@ -1,0 +1,17 @@
+{
+  "name": "media-player",
+  "version": "1.0.0",
+  "description": "Proyecto para reproductor de video",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "keywords": [
+    "videoplayer"
+  ],
+  "author": "Esdras Benjamín Pavón <pavonesdras@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
