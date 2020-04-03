@@ -1,20 +1,15 @@
+import MediaPlayer from './MediaPlayer.js';
+import AutoPlay from './plugins/AutoPlay.js';
+
 const video = document.querySelector("video");
-        const button = document.querySelector("button");
+const button = document.querySelector("#play");
+const mute = document.querySelector("#mute");
 
-        function MediaPlayer(config) {
-            this.media = config.el;
-            this.paused = true;
-        }
 
-        MediaPlayer.prototype.play = function(){
-            this.media.play();
-            this.paused = false;
-        }
-        MediaPlayer.prototype.pause = function(){
-            this.media.pause();
-            this.paused = true;
-        }
+const player = new MediaPlayer({ el: video, plugins: [
+    //new AutoPlay()
+] });
 
-        const player = new MediaPlayer({ el: video });
+button.onclick= () => player.paused ? player.play() : player.pause();
 
-        button.onclick= () => player.paused ? player.play() : player.pause();
+mute.onclick= () => player.muted ? player.unmute() : player.mute();
