@@ -1,7 +1,7 @@
-import MediaPlayer from './MediaPlayer';
-import AutoPlay from './plugins/AutoPlay';
-import AutoPause from './plugins/AutoPause';
-import Ads from './plugins/Ads';
+import MediaPlayer from '@esdraspavon/mediaplayer';
+import AutoPlay from '@esdraspavon/mediaplayer/lib/plugins/AutoPlay';
+import AutoPause from '@esdraspavon/mediaplayer/lib/plugins/AutoPause';
+import Ads from '@esdraspavon/mediaplayer/lib/plugins/Ads';
 
 const video = document.querySelector("video");
 const button: HTMLElement = document.querySelector("#play");

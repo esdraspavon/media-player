@@ -17,5 +17,8 @@
   },
   "browserslist": [
     "last 1 Chrome version"
-  ]
+  ],
+  "dependencies": {
+    "@esdraspavon/mediaplayer": "^1.0.0"
+  }
 }
